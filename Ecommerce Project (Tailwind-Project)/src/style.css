@@ -1,0 +1,399 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* this is menu button effect */
+.menu-btn {
+    position: relative;
+    box-sizing: border-box;
+    display: inline-block;
+    overflow: hidden;
+    padding: 15px 15px;
+    /* margin: 0px 3px 6px; */
+    text-align: center;
+    /* border: 2px solid rgb(255, 255, 255); */
+    text-decoration: none;
+    color: #000;
+    white-space: nowrap;
+    z-index: 0;
+    margin: -5px;
+} 
+
+.menu-btn i {
+    padding-right: 8px;
+} 
+
+.menu-hb-fill-middle-rev::before {
+    position: absolute;
+    content: "";
+    background: rgb(255, 255, 255);
+    transition-duration: 0.5s;
+    z-index: -1;
+    inset: auto auto 0px 0px;
+    width: 100%;
+    height: 50%;
+    opacity: 1;
+} 
+
+.menu-hb-fill-middle-rev:hover::before {
+    width: 100%;
+    height: 0%;
+    opacity: 1;
+} 
+
+.menu-hb-fill-middle-rev:hover {
+    background: #E9A0B4;
+    color: #fff;
+    transition: color 0.1s ease 0s, background 0.6s ease 0s;
+} 
+
+.menu-hb-fill-middle-rev::after {
+    position: absolute;
+    content: "";
+    background: rgb(255, 255, 255);
+    transition-duration: 0.5s;
+    z-index: -1;
+    inset: 0px auto auto 0px;
+    width: 100%;
+    height: 50%;
+    opacity: 1;
+} 
+
+.menu-hb-fill-middle-rev:hover::after {
+    height: 0px;
+} 
+/* |||||||||||||||||||||||||||||||||||||| */
+
+/* drop-down menu */
+.dropdown {
+    display: inline-block;
+    position: relative;
+  }
+  
+  .dropdwon-content {
+    background-color: #fff;
+    /* position: absolute; */
+    /* width: 800px; */
+    /* transition-delay: 0.3s !important; */
+    /* transition:color 0.5s ease 0.4s, background 0.6s ease 0.6s !important; */
+    margin-left: -5px;
+    display: none;
+  }
+  
+  .dropdown:hover .dropdwon-content {
+    position: absolute;
+    /* transition-delay: 0.3s !important; */
+    /* transition:color 0.5s ease 0.4s, background 0.6s ease 0.6s !important; */
+    display: block;
+  }
+/* |||||||||||||||||||| */
+/* this is the whole menu background and button color */
+.page-color {
+    background: #E9A0B4;
+}
+.page-color-text {
+    color: #E9A0B4;
+}
+.hover-bg:hover {
+    background: #E9A0B4;
+}
+/* this is checkout, wishlist, contact menu hover color */
+.page-color-text-menu:hover {
+    color: #E9A0B4;
+    transition-duration: 0.4s;
+}
+
+/* this is hover border color */
+.page-border-color:hover {
+    border-radius: 50%;
+    border: 1px solid #E9A0B4;
+}
+/* this is page boreder color */
+.border-underline-color {
+    border-color: #E9A0B4;
+}
+
+/* this is button effect for body  */
+.btn-hover-color:hover {
+    background: #E9A0B4;
+    color: #fff;
+    transition: color 0.4s ease 0.3s, background 0.4s ease 0.3s;
+}
+
+/* this description effect button effect */
+.hbtn {
+    position: relative;
+    box-sizing: border-box;
+    display: inline-block;
+    overflow: hidden;
+    /* padding: 8px 20px; */
+    /* margin: 0px 3px 6px; */
+    text-align: center;
+    /* border: 2px solid rgb(255, 255, 255); */
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    white-space: nowrap;
+    z-index: 0;
+} 
+
+
+.hbtn i {
+    padding-right: 8px;
+} 
+
+
+.hb-fill-bottom::before {
+    position: absolute;
+    content: "";
+    background: rgb(0, 0, 0);
+    transition-duration: 0.6s;
+    z-index: -1;
+    inset: 0px auto auto 0px;
+    width: 100%;
+    height: 0px;
+    opacity: 1;
+} 
+
+
+.hb-fill-bottom:hover::before {
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+} 
+
+
+.hb-fill-bottom:hover {
+    color: rgb(255, 255, 255);
+    background: rgb(0, 0, 0) !important;
+    transition: color 0.5s ease 0.1s, background 0s ease 0.5s;
+} 
+/* |||||||||||||||||||||||||||||| */
+
+/* this is instagram hover */
+.instagram i:hover {
+    background: radial-gradient(circle at 30% 107%,#fdf497 0,#fdf497 5%,#fd5949 45%,#d6249f 60%,#285aeb 90%);
+    border-radius: 2.25rem;
+}
+
+/* this footer social color */
+.facebook {
+    background-color: #3b5999;
+}
+.twitter {
+    background-color: #00aced;
+}
+.pinterest {
+    background-color: #cb2027;
+}
+.footer-instagram {
+    background-color: #cc2366;
+}
+.tumblr {
+    background-color: #f26522;
+}
+.youtube {
+    background-color: #d12121;
+}
+
+/* Accessories Page (filter-toolbar section) */
+.grid-img .checked, .list-img:hover {
+    background-position: -36px -33px;
+}
+
+.grid-img {
+    background-image: url(../public/img/grid-list-sprite.png);
+    height: 22px;
+    width: 22px;
+    content: "";
+    background-position: 0 -33px;
+    display: inline-block;
+    /* -webkit-transition: all .3s ease 0s;
+    -moz-transition: all .3s ease 0s;
+    -ms-transition: all .3s ease 0s;
+    -o-transition: all .3s ease 0s; */
+    transition: all .3s ease 0s;
+    margin: 1px;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    /* z-index: 2; */
+}
+
+.list-img {
+    background-image: url(../public/img/grid-list-sprite.png);
+    height: 22px;
+    width: 22px;
+    content: "";
+    background-position: -36px 0px;
+    display: inline-block;
+    /* -webkit-transition: all .3s ease 0s;
+    -moz-transition: all .3s ease 0s;
+    -ms-transition: all .3s ease 0s;
+    -o-transition: all .3s ease 0s; */
+    transition: all .3s ease 0s;
+    cursor: pointer;
+    margin: 1px;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+}
+
+/* this is accordation style */
+
+.accordion {
+    /* background-color: #eee; */
+    /* color: #444; */
+    cursor: pointer;
+    /* padding: 18px; */
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    /* font-size: 15px; */
+    transition: 0.4s;
+  }
+  
+  .active, .accordion:hover {
+    /* background-color: #ccc; */
+  }
+  
+  .panel {
+    padding: 0 8px;
+    /* background-color: white; */
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+
+button.accordion.active:after {
+    content: "\2212";
+}
+
+button.accordion:after {
+    content: '\002B';
+    /* color: #777; */
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+/* review accordion */
+
+.accordion-review {
+    background-color: #E9A0B4;
+    /* color: #444; */
+    cursor: pointer;
+    /* padding: 18px; */
+    /* width: 100%; */
+    border: none;
+    /* text-align: left; */
+    outline: none;
+    /* font-size: 15px; */
+    transition: 0.4s;
+  }
+  
+  .active, .accordion-review {
+    /* background-color: #E9A0B4; */
+  }
+  
+  .panel-review {
+    /* padding: 0 8px; */
+    /* background-color: white; */
+    max-height: 0;
+    overflow: hidden;
+
+    transition: max-height 0.2s ease-out;
+  }
+
+button.accordion-review.active:after {
+    font-family: 'FontAwesome';
+    /* content: "\f106"; */
+}
+button.accordion-review:after {
+    /* content: '\f107'; */
+    /* color: #777; */
+    font-weight: bold;
+    /* position: absolute; */
+    /* float: left; */
+    margin-left: 5px;
+    font-family: 'FontAwesome';
+}
+
+
+/* this is faq style */
+
+.accordion-faq {
+    background-color: #fff;
+    /* color: #444; */
+    cursor: pointer;
+    /* padding: 18px; */
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+  }
+  
+  .active, .accordion-faq:hover {
+    /* background-color: #E5E7EB; */
+  }
+  
+  .panel-faq {
+    /* padding: 0 8px; */
+    /* background-color: white; */
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+
+li.accordion-faq.active:after {
+    font-family: 'FontAwesome';
+    content: "\f106";
+}
+li.accordion-faq:after {
+    content: '\f107';
+    /* color: #777; */
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+    font-family: 'FontAwesome';
+}
+
+/* contact */
+ .contact-border {
+        height: 570px !important;
+        width: 570px !important;
+        border: 5px solid rgb(211, 211, 211);
+        z-index: -1;
+}
+.contact:hover .contact-border {
+    border-color: #e9a0b4 !important;
+}
+
+/* tab  */
+.tab-actived {
+    background-color: black !important;
+    color: white;
+}
+.product-actived {
+    background-color: #E9A0B4 !important;
+    color: white;
+}
+.category-actived {
+    background-color: #E9A0B4 !important;
+    color: #fff;
+}
+.tabContent {
+    -webkit-animation: fadeEffect 1s;
+    animation: fadeEffect 2s;
+}
+
+@-webkit-keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+      
+@keyframes fadeEffect {
+      from {opacity: 0;}
+      to {opacity: 1;}
+}

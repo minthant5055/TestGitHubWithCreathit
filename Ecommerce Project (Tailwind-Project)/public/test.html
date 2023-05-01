@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="izmir.min.css">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<!-- <link rel="stylesheet" href="css/izmir.min.css"> -->
+<link rel="stylesheet" href="imagehover.css">
+<link rel="stylesheet" href="owl.carousel.min.css">
+<link rel="stylesheet" href="owl.theme.default.min.css">
+<style>
+/* .dropdown:hover .dropbtn {background-color: #3e8e41;} */
+/* .active {
+    background-color: black !important;
+    color: white;
+} */
+</style>
+</head>
+<body>
+  <div class="container w-11/12 pt-12 mx-10 mx-auto text-center"> 
+    <div class="container px-10 py-5 mx-auto text-center uppercase bg-white tabContent" id="myDIV">
+        <a href="#description" class="px-5 py-2 mx-1 bg-gray-100 tab-actived hbtn hb-fill-bottom" onclick="openTab('descriptions')">description</a>
+        <a href="#review" class="px-5 py-2 mx-1 bg-gray-100 hbtn hb-fill-bottom" onclick="openTab('reviews')">review</a>
+        <a href="#any" class="px-5 py-2 mx-1 bg-gray-100 hbtn hb-fill-bottom" onclick="openTab('anyQuestions')">any questions ?</a>
+        <a href="#about" class="px-5 py-2 mx-1 bg-gray-100 hbtn hb-fill-bottom" onclick="openTab('aboutThisItem')">about this item</a>
+        <a href="#additional" class="px-5 py-2 mx-1 bg-gray-100 hbtn hb-fill-bottom" onclick="openTab('AdditionalInformation')">additional information</a>
+    </div>
+    <div class="container px-16 mx-auto text-gray-400 bg-white tabContent Tab" id="descriptions">
+    <div class="text-left">
+        <p class="py-3">Faded short sleeves t-shirt with high neckline. Soft and stretchy material for a comfortable fit. Accessorize with a straw hat and you're ready for summer!</p>
+        <h5 class="py-3 font-medium text-black">Sample Unordered List</h5>
+        <ul class="list-disc list-inside">
+            <li>Comodous in tempor ullamcorper miaculis</li>
+            <li>Pellentesque vitae neque mollis urna mattis laoreet.</li>
+            <li>Divamus sit amet purus justo.</li>
+            <li>Proin molestie egestas orci ac suscipit risus posuere loremou.</li>
+        </ul>
+    </div>
+    <div class="text-left">
+        <h5 class="py-3 font-medium text-black">Sample Unordered List</h5>
+        <ul class="list-decimal list-inside">
+            <li>Comodous in tempor ullamcorper miaculis</li>
+            <li>Pellentesque vitae neque mollis urna mattis laoreet.</li>
+            <li>Divamus sit amet purus justo.</li>
+            <li>Proin molestie egestas orci ac suscipit risus posuere loremou.</li>
+    </div>
+    <div class="text-left">
+        <h5 class="py-3 font-medium text-black">Sample Unordered List</h5>
+        <p class="pl-5 text-gray-400 border-l-2 border-gray-300">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia, temporibus reiciendis laudantium sapiente incidunt, assumenda voluptatum quos deserun adipisicing elit. Quia, temporibus reiciendis laudantium sapiente incidunt, assumenda voluptatum quos deserun adipisicing elit. Quia, temporibus reiciendis laudantium sapiente 
+        </p>
+    </div>
+    </div>
+    <div class="container px-16 mx-auto bg-white tabContent Tab" id="reviews" style="display: none;">
+      <div class="text-left">
+        <div class="relative justify-between">
+          <div class="inline-flex items-center cursor-pointer">
+            <i class="text-yellow-400 fas fa-star" aria-hidden="true"></i>
+            <i class="text-yellow-400 fas fa-star" aria-hidden="true"></i>
+            <i class="text-yellow-400 fas fa-star" aria-hidden="true"></i>
+            <i class="text-yellow-400 fas fa-star" aria-hidden="true"></i>
+            <i class="text-gray-500 fas fa-star" aria-hidden="true"></i>
+            <p class="mx-3 text-gray-400 ">Based on 2 reviews</p>
+          </div>
+          <button class="absolute top-0 right-0 inline-block px-2 py-2 text-white uppercase transition duration-500 ease-in-out appearance-none focus:outline-none accordion-review w-36 hover:bg-gray-900 page-color">Write a review</button>
+          <div class="mt-8 panel-review">
+            <hr class="my-5 bg-gray-100 border">
+            <p class="text-lg text-gray-600">Write a review</p>
+            <label for="" class="text-sm font-bold text-gray-600">Name</label><br>
+            <input type="text" name="" id="" class="w-full px-3 py-3 my-2 placeholder-gray-400 border border-gray-300 rounded-md appearance-none focus:ring-1 focus:ring-red-300 focus:outline-none ring-gray-600" placeholder="Enter your name">
+            <label for="" class="py-3 text-sm font-bold text-gray-600">Email</label><br>
+            <div class="py-1 text-gray-600 cursor-pointer">
+              <i class="fas fa-star hover:text-yellow-400" aria-hidden="true"></i>
+              <i class="fas fa-star hover:text-yellow-400" aria-hidden="true"></i>
+              <i class="fas fa-star hover:text-yellow-400" aria-hidden="true"></i>
+              <i class="fas fa-star hover:text-yellow-400" aria-hidden="true"></i>
+              <i class="fas fa-star hover:text-yellow-400" aria-hidden="true"></i>
+            </div>
+            <label for="" class="text-sm font-bold text-gray-600">Email</label><br>
+            <input type="email" name="" id="" class="w-full px-3 py-3 my-2 placeholder-gray-400 border border-gray-300 rounded-md appearance-none focus:ring-1 focus:ring-red-300 focus:outline-none ring-gray-600" placeholder="john.smith@example.com">
+            <label for="" class="text-sm font-bold text-gray-600">Review Title</label><br>
+            <input type="text" name="" id="" class="w-full px-3 py-3 my-2 placeholder-gray-400 border border-gray-300 rounded-md appearance-none focus:ring-1 focus:ring-red-300 focus:outline-none ring-gray-600" placeholder="Give your review a title">
+            <label for="" class="text-sm font-bold text-gray-600">Body fo Review(1500)</label><br>
+            <textarea type="text" name="" id="" class="w-full px-3 pt-3 my-2 placeholder-gray-400 border border-gray-300 rounded-md appearance-none resize-y h-80 focus:ring-2 focus:ring-red-300 focus:outline-none" placeholder="Write your comment here"></textarea>
+            <div class="grid justify-end">
+              <button class="inline-block px-2 py-2 text-white uppercase transition duration-500 ease-in-out appearance-none focus:outline-none accordion-review w-36 hover:bg-gray-900 page-color">submit</button>
+            </div>
+          </div>
+        </div>
+        <hr class="my-5 bg-gray-100 border">
+        <div class="py-1 text-yellow-400 cursor-pointer">
+          <i class="fas fa-star" aria-hidden="true"></i>
+          <i class="fas fa-star" aria-hidden="true"></i>
+          <i class="fas fa-star" aria-hidden="true"></i>
+          <i class="fas fa-star" aria-hidden="true"></i>
+          <i class="fas fa-star" aria-hidden="true"></i>
+        </div>
+        <p class="py-1 text-blcak">Ummm</p>
+        <p class="inline-block py-1 text-sm text-gray-400">Martin on Jan 29, 2021</p><br>
+        <p class="inline-block py-1 text-sm text-gray-400">Ummm Not Bad</p><br>
+        <a class="inline-block py-1 text-sm font-bold text-gray-400 duration-500 cursor-pointer hover:text-gray-500">Report as Inappropriate</a>
+        <hr class="my-5 bg-gray-100 border">
+        <div class="py-1 text-yellow-400 cursor-pointer">
+          <i class="fas fa-star" aria-hidden="true"></i>
+          <i class="fas fa-star" aria-hidden="true"></i>
+          <i class="fas fa-star" aria-hidden="true"></i>
+          <i class="fas fa-star" aria-hidden="true"></i>
+          <i class="fas fa-star" aria-hidden="true"></i>
+        </div>
+        <p class="py-1 text-blcak">Good Product</p>
+        <p class="inline-block py-1 text-sm text-gray-400">John Smith on Feb 13, 2021</p>
+        <p class="inline-block py-1 text-sm text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis doloremque earum i, vero voluptates blanditiis aliquam! Maiores cupiditate quidem animi dolorum.</p>
+        <a class="inline-block py-1 text-sm font-bold text-gray-400 duration-500 cursor-pointer hover:text-gray-500">Report as Inappropriate</a>
+        <hr class="my-5 bg-gray-100 border">
+        <div class="py-1 text-yellow-400 cursor-pointer">
+          <i class="fas fa-star" aria-hidden="true"></i>
+          <i class="fas fa-star" aria-hidden="true"></i>
+          <i class="fas fa-star" aria-hidden="true"></i>
+          <i class="fas fa-star" aria-hidden="true"></i>
+          <i class="fas fa-star" aria-hidden="true"></i>
+        </div>
+        <p class="py-1 text-blcak">Best Product</p>
+        <p class="inline-block py-1 text-sm text-gray-400">Jackey on Aug 18, 2021</p>
+        <p class="inline-block py-1 text-sm text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis doloremque earum i, vero voluptates blanditiis aliquam! vero voluptates blanditiis aliqua Maiores cupiditate quidem animi dolorum.</p>
+        <a class="inline-block py-1 text-sm font-bold text-gray-400 duration-500 cursor-pointer hover:text-gray-500">Report as Inappropriate</a>
+      </div>
+    </div>
+    <div class="container px-16 mx-auto text-gray-400 bg-white tabContent Tab" id="anyQuestions" style="display: none;">
+      <div class="grid grid-cols-3 mt-5 gap-7">
+        <input type="text" name="" id="" class="w-full px-3 py-2 placeholder-gray-400 border border-gray-300 rounded-md appearance-none focus:ring-1 focus:ring-red-300 focus:outline-none ring-gray-600" placeholder="Name">
+        <input type="name" name="" id="" class="w-full px-3 py-2 placeholder-gray-400 border border-gray-300 rounded-md appearance-none focus:ring-1 focus:ring-red-300 focus:outline-none ring-gray-600" placeholder="Email">
+        <input type="number" name="" id="" class="w-full px-3 py-2 placeholder-gray-400 border border-gray-300 rounded-md appearance-none focus:ring-1 focus:ring-red-300 focus:outline-none ring-gray-600" placeholder="Phpne Number">
+      </div>
+      <div class="mt-5">
+        <input type="text" name="" id="" class="w-full px-3 pt-3 placeholder-gray-400 border border-gray-300 rounded-md appearance-none pb-60 focus:ring-1 focus:ring-red-300 focus:outline-none ring-gray-600" placeholder="your message">
+        <!-- <input type="text" name="" id="" class="w-full pb-72" placeholder="message"> -->
+      </div>
+      <div class="mt-5">
+        <button class="px-5 py-2 text-white uppercase duration-700 page-color hover:bg-black">send</button>
+      </div>
+    </div>
+    <div class="container px-16 mx-auto text-gray-400 bg-white tabContent Tab" id="aboutThisItem" style="display: none;">
+      <table class="w-full table-auto">
+        <tbody>
+          <tr>
+            <td class="p-3 font-bold text-left text-gray-600 border border-gray-200">Brand</td>
+            <td class="p-3 text-left text-gray-600 border border-gray-200">SUGAR Cosmetics</td>
+          </tr>
+          <tr>
+            <td class="p-3 font-bold text-left text-gray-600 border border-gray-200">Colour</td>
+            <td class="p-3 text-left text-gray-600 border border-gray-200">04 L.I.I.T - Party in a tiny pack!</td>
+          </tr>
+          <tr>
+            <td class="p-3 font-bold text-left text-gray-600 border border-gray-200">Finish Type</td>
+            <td class="p-3 text-left text-gray-600 border border-gray-200">Glossy</td>
+          </tr>
+          <tr>
+            <td class="p-3 font-bold text-left text-gray-600 border border-gray-200">Item Form</td>
+            <td class="p-3 text-left text-gray-600 border border-gray-200">Stick</td>
+          </tr>
+          <tr>
+            <td class="p-3 font-bold text-left text-gray-600 border border-gray-200">Skin Type</td>
+            <td class="p-3 text-left text-gray-600 border border-gray-200">Combination, Sensitive, Dry</td>
+          </tr>
+          <tr>
+            <td class="p-3 font-bold text-left text-gray-600 border border-gray-200">Item Dimensions LxWxH</td>
+            <td class="p-3 text-left text-gray-600 border border-gray-200">24.7 x 10.6 x 24.7 Centimeters</td>
+          </tr>
+          <tr>
+            <td class="p-3 font-bold text-left text-gray-600 border border-gray-200">Item Weight</td>
+            <td class="p-3 text-left text-gray-600 border border-gray-200">4.5 Grams</td>
+          </tr>
+          <tr>
+            <td class="p-3 font-bold text-left text-gray-600 border border-gray-200">Item Weight</td>
+            <td class="p-3 text-left text-gray-600 border border-gray-200">690 g</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="container px-16 mx-auto text-gray-400 bg-white tabContent Tab" id="AdditionalInformation" style="display: none;">
+      <div class="text-left">
+          <h5 class="py-3 font-medium text-black">Sample Unordered List</h5>
+          <ul class="list-disc list-inside">
+              <li>COSMETICS ARE NOT INCLUDED WITH BOX" Easily contain daily essentials in the 16 compartments. 12 small compartments make it convenient to store smaller items like lipsticks. The 4 large compartment is ample enough to store and organize multiple large perfume bottles, jewelleries, eyeliners, hair spray and makeup brushes.</li>
+              <li>The perfect multi-purpose organizer for your bathroom counter or a deep drawer. This Vanity Organizer is the best choice. Clear the drawer clutter and keep your daily makeup essentials neatly organized.</li>
+              <li>The lipstick organizer is for storage and organization of your cosmetics in your vanity, bathroom, bedroom, countertop. Also great as gift for Christmas, Valentine’s Day, Mother’s Day, birthdays, and others.</li>
+              <li>Size : 21.2L x 12.5W x 7.8H cm :::: Material : plastic :::: Colour : Transparent</li>
+              <li>Package Include : 1 x 16 Compartment Cosmetic Organiser :::: Note : Accessories Not Included (Nail Polish can not fit in 12 Small Compartment)</li>
+              <li>Proin molestie egestas orci ac suscipit risus posuere loremou.</li>
+              <li>Keeps lips supple and moisturized</li>
+              <li>Relieves dry, chapped lips</li>
+              <li>In 7 awesome variants</li>
+      </div>
+    </div>
+</div>
+
+<script src="jquery.min.js"></script> 
+<script src="owl.carousel.min.js"></script>
+<script>
+    $('.owl-carousel').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:true,
+        responsive:{
+            0:{
+                items:1
+            },
+            300:{
+                items:3
+            },
+        }
+        })
+        var owl = $('.owl-carousel');
+        owl.owlCarousel({
+        items:6,
+        loop:true,
+        // margin:10,
+        autoplay:true,
+        autoplayTimeout:1000,
+        autoplayHoverPause:true
+        });
+</script> 
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({
+        easing: 'ease-in-out-sine'
+    });
+</script>
+<script src="https://kit.fontawesome.com/adc331873a.js" crossorigin="anonymous"></script>
+
+<!-- this is alert box section -->
+<script>
+    var close = document.getElementsByClassName("closebtn");
+    var i;
+    for (i = 0; i < close.length; i++) {
+    close[i].onclick = function(){
+        var div = this.parentElement;
+        div.style.opacity = "0";
+        setTimeout(function(){ div.style.display = "none"; }, 600);
+    }
+    }
+</script>
+<!-- Tab section -->
+<script>
+function openTab(tabName) {
+    var i;
+    var x = document.getElementsByClassName("Tab");
+    for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+    }
+    document.getElementById(tabName).style.display = "block";  
+}
+    var header = document.getElementById("myDIV");
+    var btns = header.getElementsByClassName("hbtn");
+    for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("tab-actived");
+    current[0].className = current[0].className.replace(" tab-actived", "");
+    this.className += " tab-actived";
+    });
+    }
+
+    function openProductTab(tabProductName) {
+    var i;
+    var x = document.getElementsByClassName("productTab");
+    for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+    }
+    document.getElementById(tabProductName).style.display = "block";  
+}
+    var header = document.getElementById("myDIVProduct");
+    var btns = header.getElementsByClassName("pbtn");
+    for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("product-actived");
+    current[0].className = current[0].className.replace(" product-actived", "");
+    this.className += " product-actived";
+    });
+    }
+</script>
+<!-- <script>
+  function openCategoryTab(tabCategoryName) {
+        var a;
+        var x = document.getElementsByClassName("categoryTab");
+        for (a = 0; a < x.length; a++) {
+        x[a].style.display = "none";  
+        }
+        document.getElementById(tabCategoryName).style.display = "block";  
+    }
+        // this is tab selected section effct
+        var header = document.getElementById("myDIVCategory");
+        var btns = header.getElementsByClassName("cbtn");
+        for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function() {
+        var current = document.getElementsByClassName("category-actived");
+        current[0].className = current[0].className.replace(" category-actived", "");
+        this.className += " category-actived";
+        });
+        }
+</script> -->
+<script>
+  function openTabCategory(tabProductName) {
+    var i;
+    var x = document.getElementsByClassName("tabCategory");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    document.getElementById(tabProductName).style.display = "block";  
+  }
+  var header = document.getElementById("myDIVCategory");
+        var btns = header.getElementsByClassName("cbtn");
+        for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function() {
+        var current = document.getElementsByClassName("category-actived");
+        current[0].className = current[0].className.replace(" category-actived", "");
+        this.className += " category-actived";
+        });
+        }
+</script>
+
+<script>
+  var acc = document.getElementsByClassName("accordion-review");
+  var i;
+  
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var panel = this.nextElementSibling;
+      if (panel.style.maxHeight) {
+        panel.style.maxHeight = null;
+      } else {
+        panel.style.maxHeight = panel.scrollHeight + "px";
+      } 
+    });
+  }
+</script>
+</body>
+</html>
